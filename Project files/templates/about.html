@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | PoultryDetect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2019/04/21/23/24/chickens-4145198_1280.jpg') no-repeat center center fixed !important;
+      background-size: cover !important;
+      
+      
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    nav .logo a {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #1abc9c;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav .social-icons i {
+      margin-left: 15px;
+      color: #aaa;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav .social-icons i:hover {
+      color: #1abc9c;
+      transform: scale(1.2);
+    }
+
+    .about-section {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 30px 40px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+    }
+
+    h1 {
+      color: #1abc9c;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .highlights {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .highlight-box {
+      background-color: rgba(20, 20, 20, 0.8);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid #1abc9c;
+      border-radius: 8px;
+    }
+
+    .highlight-box h3 {
+      margin: 0 0 10px;
+      color: #1abc9c;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      nav .social-icons {
+        margin-top: 15px;
+      }
+
+      .about-section {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><a href="/">POULTRY DETECT</a></div>
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/about" class="active">ABOUT</a></li>
+      <li><a href="/contact">CONTACT</a></li>
+      <li><a href="/predict">PREDICT</a></li>
+    </ul>
+    <div class="social-icons">
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </nav>
+
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>
+      PoultryDetect is an AI-powered platform built to help poultry farmers identify and manage common poultry diseases with speed and accuracy. 
+      Using advanced image recognition and deep learning models like ResNet, we provide real-time disease detection based on visual symptoms.
+    </p>
+    <p>
+      Our mission is to promote healthier poultry farming through early disease detection, enabling informed decision-making and reducing livestock losses.
+    </p>
+
+    <div class="highlights">
+      <div class="highlight-box">
+        <h3>🐣 AI-Powered Diagnosis</h3>
+        <p>Instant image-based classification of diseases like Coccidiosis, Newcastle, and Salmonella.</p>
+      </div>
+      <div class="highlight-box">
+        <h3>📊 Health Tracking</h3>
+        <p>Track disease history and receive personalized care recommendations.</p>
+      </div>
+      <div class="highlight-box">
+        <h3>🌍 Empowering Farmers</h3>
+        <p>Bringing modern AI tools to every corner of the poultry industry.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
